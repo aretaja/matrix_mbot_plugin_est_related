@@ -79,7 +79,7 @@ sub parse
             my @out = (
                 '',
                 "Seisuga $data->{time}",
-"Temp (C) : Sademed (mm) : Niiskus (%) : Rõhk (hPa) |  Tuul (m/s)"
+"Temp (C) : Sademed (mm) : Niiskus (%) : Rõhk (hPa) :  Tuul (m/s)"
             );
 
             foreach (sort(keys(%{$data->{locations}})))

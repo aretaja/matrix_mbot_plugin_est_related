@@ -4,7 +4,7 @@ use XML::Smart;
 use DateTime;
 use Encode;
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 =head1 NAME
 
@@ -79,7 +79,7 @@ sub parse
             my @out = (
                 '',
                 "Seisuga $data->{time}",
-"Temp (C) : Sademed (mm) : Niiskus (%) : Rõhk (hPa) |  Tuul (m/s)"
+"Temp (C) : Sademed (mm) : Niiskus (%) : Rõhk (hPa) :  Tuul (m/s)"
             );
 
             foreach (sort(keys(%{$data->{locations}})))

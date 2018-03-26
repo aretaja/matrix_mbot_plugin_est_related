@@ -14,7 +14,7 @@ Mbot::Plugins::Ilm - Mbot Estonian weather plugin
 
 =head2 parse - input parser
 
-If input is "ilm" responds weather data
+Responds weather data.
 
        $result = parse($self->in);
 

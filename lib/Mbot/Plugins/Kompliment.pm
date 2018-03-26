@@ -12,7 +12,7 @@ Mbot::Plugins::Kompliment - Simple Mbot compliment plugin
 
 =head2 parse - input parser
 
-If input is "kompliment" responds with random compliment.
+Responds random compliment.
 Compliments source L<https://github.com/mth/hirc/blob/master/compliments.txt>
 
        $result = parse($self->in);

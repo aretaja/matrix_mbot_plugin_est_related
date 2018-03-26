@@ -12,7 +12,7 @@ Mbot::Plugins::Solva - Simple Mbot insult plugin
 
 =head2 parse - input parser
 
-If input is "solva" responds with random insult.
+Responds random insult.
 Insults source L<https://github.com/mth/hirc/blob/master/insult.txt>
 
        $result = parse($self->in);

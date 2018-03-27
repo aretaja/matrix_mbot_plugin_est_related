@@ -10,7 +10,7 @@ Mbot
 
 * From debian repo
 ```
-apt install libwww-perl libxml-smart-perl
+apt install libxml-smart-perl
 ```
 ## Installing
 ### Install plugin

@@ -1,8 +1,11 @@
 package Mbot::Plugins::Solva;
+use strict;
+use warnings;
+
 use List::Util 'shuffle';
 use Encode;
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 =head1 NAME
 
@@ -381,7 +384,7 @@ sub parse
 '%% pea püsib ikka püsti - sooja õhku täis skalp ei kaalu ju palju ;)',
         );
 
-        @shuffled = shuffle(@frases);
+        my @shuffled = shuffle(@frases);
         my $c = decode('utf8', $shuffled[0]);
         $c =~ s/%%/$user/g;
 

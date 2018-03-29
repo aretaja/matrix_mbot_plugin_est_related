@@ -1,10 +1,13 @@
 package Mbot::Plugins::Ilm;
+use strict;
+use warnings;
+
 use LWP::UserAgent;
 use XML::Smart;
 use DateTime;
 use Encode;
 
-our $VERSION = '0.2';
+our $VERSION = '0.3';
 
 =head1 NAME
 

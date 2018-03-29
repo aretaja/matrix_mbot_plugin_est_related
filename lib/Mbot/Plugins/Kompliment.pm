@@ -1,8 +1,11 @@
 package Mbot::Plugins::Kompliment;
+use strict;
+use warnings;
+
 use List::Util 'shuffle';
 use Encode;
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 =head1 NAME
 
@@ -94,7 +97,7 @@ sub parse
 'Kas teate, miks John Holmes Eestis ei käinud? Ta kartis %%-ga võistelda.',
         );
 
-        @shuffled = shuffle(@frases);
+        my @shuffled = shuffle(@frases);
         my $c = decode('utf8', $shuffled[0]);
         $c =~ s/%%/$user/g;
 

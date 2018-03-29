@@ -12,19 +12,26 @@ Mbot
 ```
 apt install libxml-smart-perl
 ```
+
 ## Installing
-### Install plugin
+
+### Download source
 ```
 git clone https://github.com/aretaja/matrix_mbot_plugin_est_related
 cd matrix_mbot_plugin_est_related
+```
+
+### Install using script
+```
+./install.sh
+```
+
+### .. or do it step by step manually
+```
 perl Makefile.PL
 make
 sudo make install
 make clean
-```
-
-### Restart mbot
-```
 sudo systemctl restart mbot
 ```
 

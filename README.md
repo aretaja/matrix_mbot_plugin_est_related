@@ -30,6 +30,7 @@ cd matrix_mbot_plugin_est_related
 ```
 perl Makefile.PL
 make
+make test
 sudo make install
 make clean
 sudo systemctl restart mbot
